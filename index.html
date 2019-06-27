@@ -143,125 +143,126 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <hr> 
  
   <div class="w3-card w3-margin">
+    <style>
       <input checked type=radio name="slider" id="slide1" />
-      <input type=radio name="slider" id="slide2" />
-      <input type=radio name="slider" id="slide3" />
-      <input type=radio name="slider" id="slide4" />
-      <input type=radio name="slider" id="slide5" />
-    
-      <div class="slider-wrapper">
-        <div class=inner>
-          <style>@import "bourbon";
-              /*---- NUMBER OF SLIDE CONFIGURATION ----*/
-              $num-of-slide: 5;
-              
-              .wrapper {
-                  max-width: 60em;
-                  margin: 1em auto;
-                  position: relative;
-              }
-              
-              input {
-                  display: none;
-              }
-              
-              .inner {
-                  width: percentage($num-of-slide);
-                  line-height: 0;
-              }
-              
-              article {
-                  width: percentage(1/$num-of-slide);
-                  float: left;
-                  position: relative;
-              
-                  img {
-                      width: 100%;
+          <input type=radio name="slider" id="slide2" />
+          <input type=radio name="slider" id="slide3" />
+          <input type=radio name="slider" id="slide4" />
+          <input type=radio name="slider" id="slide5" />
+        
+          <div class="slider-wrapper">
+            <div class=inner>
+              <style>@import "bourbon";
+                  /*---- NUMBER OF SLIDE CONFIGURATION ----*/
+                  $num-of-slide: 5;
+                  
+                  .wrapper {
+                      max-width: 60em;
+                      margin: 1em auto;
+                      position: relative;
                   }
-              }
-              
-              /*---- SET UP CONTROL ----*/
-              .slider-prev-next-control {
-                  height: 50px;
-                  position: absolute;
-                  top: 50%;
-                  width: 100%;
-                  @include transform(translateY(-50%));
-              
-                  label {
+                  
+                  input {
                       display: none;
-                      width: 40px;
-                      height: 40px;
-                      border-radius: 50%;
-                      background: #fff;
-                      opacity: 0.7;
-              
-                      &:hover {
-                          opacity: 1;
+                  }
+                  
+                  .inner {
+                      width: percentage($num-of-slide);
+                      line-height: 0;
+                  }
+                  
+                  article {
+                      width: percentage(1/$num-of-slide);
+                      float: left;
+                      position: relative;
+                  
+                      img {
+                          width: 100%;
                       }
                   }
-              }
-              
-              .slider-dot-control {
-                  position: absolute;
-                  width: 100%;
-                  bottom: 0;
-                  text-align: center;
-              
-                  label {
-                      cursor: pointer;
-                      border-radius: 5px;
-                      display: inline-block;
-                      width: 10px;
-                      height: 10px;
-                      background: #bbb;
-                      @include transition(all 0.3s);
-              
-                      &:hover {
-                          background: #ccc;
-                          border-color: #777;
+                  
+                  /*---- SET UP CONTROL ----*/
+                  .slider-prev-next-control {
+                      height: 50px;
+                      position: absolute;
+                      top: 50%;
+                      width: 100%;
+                      @include transform(translateY(-50%));
+                  
+                      label {
+                          display: none;
+                          width: 40px;
+                          height: 40px;
+                          border-radius: 50%;
+                          background: #fff;
+                          opacity: 0.7;
+                  
+                          &:hover {
+                              opacity: 1;
+                          }
                       }
                   }
-              }
-              
-              /* Info Box */
-              .info {
-                  position: absolute;
-                  font-style: italic;
-                  line-height: 20px;
-                  opacity: 0;
-                  color: #000;
-                  text-align: left;
-                  @include transition(all 1000ms ease-out 600ms);
-              
-                  h3 {
-                      color: #fcfff4;
-                      margin: 0 0 5px;
-                      font-weight: normal;
-                      font-size: 1.5em;
-                      font-style: normal;
+                  
+                  .slider-dot-control {
+                      position: absolute;
+                      width: 100%;
+                      bottom: 0;
+                      text-align: center;
+                  
+                      label {
+                          cursor: pointer;
+                          border-radius: 5px;
+                          display: inline-block;
+                          width: 10px;
+                          height: 10px;
+                          background: #bbb;
+                          @include transition(all 0.3s);
+                  
+                          &:hover {
+                              background: #ccc;
+                              border-color: #777;
+                          }
+                      }
                   }
-              
-                  &.top-left {
-                      top: 30px;
-                      left: 30px;
-                  }
-              
-                  &.top-right {
-                      top: 30px;
-                      right: 30px;
-                  }
-              
-                  &.bottom-left {
-                      bottom: 30px;
-                      left: 30px;
-                  }
-              
-                  &.bottom-right {
-                      bottom: 30px;
-                      right: 30px;
-                  }
-              }
+                  
+                  /* Info Box */
+                  .info {
+                      position: absolute;
+                      font-style: italic;
+                      line-height: 20px;
+                      opacity: 0;
+                      color: #000;
+                      text-align: left;
+                      @include transition(all 1000ms ease-out 600ms);
+                  
+                      h3 {
+                          color: #fcfff4;
+                          margin: 0 0 5px;
+                          font-weight: normal;
+                          font-size: 1.5em;
+                          font-style: normal;
+                      }
+                  
+                      &.top-left {
+                          top: 30px;
+                          left: 30px;
+                      }
+                  
+                      &.top-right {
+                          top: 30px;
+                          right: 30px;
+                      }
+                  
+                      &.bottom-left {
+                          bottom: 30px;
+                          left: 30px;
+                      }
+                  
+                      &.bottom-right {
+                          bottom: 30px;
+                          right: 30px;
+                      }
+                  }</style>
     <div class="w3-container w3-padding">
       <h4>¿CÓMO SE FABRICA NUESTRA ROPA? ▼</h4>
       <div class="wrapper">
