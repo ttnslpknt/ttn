@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+        <style>
+                ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333;
+                }
+                
+                li {
+                  float: left;
+                }
+                
+                li a {
+                  display: inline-block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                
+                li a:hover {
+                  background-color: rgb(7, 7, 7);
+                }
+                
+                .active {
+                  background-color: #792E8D ;
+                }
+                </style>
+        <script type ="text/javascript">
+
+            var hora=new Date();
+            if (hora.getHours()> 11) {alert ("Buenas tardes, ¡hora perfecta para rockear!");}
+            else{
+                alert("Buenos días, ¿rockeamos?");
+            }
+            </script>
+<title> Kaos </title>
+</head>
+<body background="">
+    <div {
+        background="fondo3.jpg"
+    }>
+    <center>
+        <a href="/"><img src="kaos.png" alt="HTML5 Icon" width="300" height="300"/></a>
+    </center>
+    <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">Productos</a></li>
+            <li><a href="#contact">Quienes somos</a></li>
+            <li><a href="#about">Colaboraciones</a></li>
+          </ul>
+          
+            </div>
+        </div>
+        <div class= "container">
+                <div class="row">
+                    <div class= "col-12">
+                        <h1> Curso code like a girl</h1>
+                    </div>
+                </div>
+              </div>
+            <div class= "container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <h3> titular3 </h3>
+                        <p> esto es un comentario</p>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                    </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <img src="" class="img-fluid"> 
+                    <h2>Titular del articulo </h2>
+                    <p> texto</p>
+                </div>
+            </div>
+            <div id="container">
+                    <center>
+                      <p>Open the lightbox with below button</p>
+                      <button id="playme" onclick="revealVideo('video','youtube')">Play Video</button>
+                    </center>
+                  </div>
+                  
+                  <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+                    <div class="lightbox-container">  
+                      <div class="lightbox-content">
+                        
+                        <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+                          Close | ✕
+                        </button>
+                        <div class="video-container">
+                          <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/watch?v=F5J5ZdKqYjU" frameborder="0" allowfullscreen></iframe>
+                        </div>      
+                        
+                      </div>
+                    </div>
+                  </div>
+<h1>Aquí hay que poner cosas</h1>
+<p>Aquí van más cosas</p>
+<div class="pie">
+        <p>Copyright © Página Web Tatiana 2019</p>
+    </div>
+</body>
+</html>
